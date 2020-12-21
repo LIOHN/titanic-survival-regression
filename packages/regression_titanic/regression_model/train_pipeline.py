@@ -16,7 +16,7 @@ def run_training() -> None:
     """Train the model."""
 
     # read training data
-    data = load_dataset(file_name=config.TRAINING_DATA_FILE)
+    data = load_dataset(file_name=config.DATASET_FILE)
 
     # divide train and test
     X_train, X_test, y_train, y_test = train_test_split(

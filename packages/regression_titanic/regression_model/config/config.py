@@ -13,9 +13,9 @@ PACKAGE_ROOT = pathlib.Path(regression_model.__file__).resolve().parent
 TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 DATASET_DIR = PACKAGE_ROOT / "datasets"
 
-TRAINING_DATA_FILE = "titanic.csv"
-# TESTING_DATA_FILE = "test.csv"
-# TRAINING_DATA_FILE = "train.csv"
+DATASET_FILE = "titanic.csv"
+TESTING_DATA_FILE = "test.csv"
+TRAINING_DATA_FILE = "train.csv"
 
 FEATURES = ["pclass", "sex", "age", "sibsp", "parch", "fare", "cabin", "embarked", "title"]
 TARGET = "survived"

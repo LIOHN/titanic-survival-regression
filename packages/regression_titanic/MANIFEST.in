@@ -9,8 +9,8 @@ include regression_model/datasets/titanic.csv
 include regression_model/trained_models/*.pkl
 include regression_model/VERSION
 
-exclude regression_model/datasets/train.csv
-exclude regression_model/datasets/test.csv
+include regression_model/datasets/train.csv
+include regression_model/datasets/test.csv
 exclude regression_model/datasets/load_and_save_dataset.py
 exclude regression_model/datasets/split_titanic.py
 
@@ -19,3 +19,6 @@ exclude *.log
 
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
+recursive-exclude * build
+recursive-exclude * dist
+recursive-exclude * regression_model.egg-info

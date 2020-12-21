@@ -9,7 +9,7 @@ from setuptools import find_packages, setup
 
 
 # Package meta-data.
-NAME = 'regression_titanic'
+NAME = 'regression_model'
 DESCRIPTION = 'Train and deploy regression model.'
 URL = ''
 EMAIL = 'daniel.e17@outlook.com'

@@ -6,4 +6,7 @@ marshmallow==2.17.0
 
 # local regression_model package
 # update with your local path
--e "C:\Users\Daniel\Documents\GitHub\titanic-survival-regression\packages\regression_titanic"
+# -e "C:\Users\Daniel\Documents\GitHub\titanic-survival-regression\packages\regression_titanic"
+
+#Install from gemfury
+regression-model==0.1.0

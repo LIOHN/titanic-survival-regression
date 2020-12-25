@@ -1,0 +1,11 @@
+[{
+	"pclass": 2,
+	"sex": "female",
+	"age": 21
+	"sibsp": 0,
+	"parch": 1,
+	"fare": 21,
+	"cabin": ,
+	"embarked": "S",
+	"title": "Miss"	
+}]

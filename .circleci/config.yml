@@ -86,7 +86,16 @@ jobs:
             . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/regression_titanic/
-
+  
+  deploy_to_heroku:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+            
 workflows:
   version: 2
   test-all:
@@ -97,7 +106,10 @@ workflows:
           requires:
             - test_regression_model
             - test_ml_api
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
+      - deploy_to_heroku:
+          requires:
+            - train_and_upload_regression_model
+          filters:
+            branches:
+              only:
+                - master
